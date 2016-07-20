@@ -6,13 +6,13 @@ var sensor = require('./modules/lightSensor');
 status.setupLEDs();
 
 async.parallel([
-    function(callback) {
+    (callback) => {
         status.setupLEDs(callback);
     },
-    function(callback) {
+    (callback) => {
         sensor.setup(callback);
     },
-], function(err, results) {
+], (err, results) => {
     if(err) throw err;
     console.log('GPIO pins setup and ready!');
 });

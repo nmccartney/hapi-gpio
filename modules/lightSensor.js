@@ -7,10 +7,10 @@ let sensorPin = 40;
 
 lightSensor.setup = function(cb) {
     async.parallel([
-        function(callback) {
+        (callback) => {
             console.log('setting up sensor');
         },
-    ], function(err, results) {
+    ], (err, results) =>{
         console.log('sensor set up');
         if(cb)cb();
     });
