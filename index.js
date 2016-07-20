@@ -26,6 +26,13 @@ function setupLEDs(cb){
     });
 }
 
+function closeLEDs(cb){
+    gpio.destroy(function() {
+        console.log('Closed pins, now exit');
+        if(cb)cb();
+    });
+}
+
 function setLedStatus(status,cb){
     switch(status){
         case 'high' :
