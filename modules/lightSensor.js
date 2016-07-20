@@ -3,7 +3,7 @@ const gpio = require('rpi-gpio');
 const async = require('async');
 
 let lightSensor = {};
-let sensorPin = 40;
+let sensorPin = 32;
 
 lightSensor.setup = function(cb) {
     async.parallel([
