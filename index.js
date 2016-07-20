@@ -14,6 +14,8 @@ async.parallel([
     if(err) throw err;
     console.log('GPIO pins setup and ready!');
 
+    status.set('high');
+
     sensor.get((v)=>{
         console.log('light = ' + v);
     })
