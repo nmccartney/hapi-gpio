@@ -9,7 +9,7 @@ lightSensor.setup = function(cb) {
     async.parallel([
         (callback) => {
             console.log('setting up sensor');
-            gpio.setup(sensorPin, gpio.DIR_IN, callback)
+            gpio.setup(sensorPin, gpio.DIR_OUT, callback)
         },
     ], (err, results) =>{
         if (err) throw err;
