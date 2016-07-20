@@ -4,7 +4,7 @@ const gpio = require('rpi-gpio');
 const async = require('async');
 
 let Status = {};
-let ledHi = 35;
+let ledHi = 33;
 let ledMed = 31;
 let ledLo = 29;
 let ledErr = 37;
