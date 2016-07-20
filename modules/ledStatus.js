@@ -36,7 +36,7 @@ Status.closeLEDs = (cb) => {
     });
 }
 
-Status.setLedStatus = (status,cb) => {
+Status.set = (status,cb) => {
     switch(status){
         case 'high' :
             async.parallel([
