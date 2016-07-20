@@ -1,5 +1,5 @@
 'use strict';
-// const gpio = require('rpi-gpio');
+const gpio = require('rpi-gpio');
 const async = require('async');
 
 let lightSensor = {};
