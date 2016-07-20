@@ -1,0 +1,22 @@
+{
+  "name": "hapi-gpio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmccartney/hapi-gpio.git"
+  },
+  "author": "Nathan McCartney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmccartney/hapi-gpio/issues"
+  },
+  "homepage": "https://github.com/nmccartney/hapi-gpio#readme",
+  "dependencies": {
+    "rpi-gpio": "^0.7.0"
+  }
+}
