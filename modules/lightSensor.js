@@ -11,6 +11,7 @@ lightSensor.setup = function(cb) {
             console.log('setting up sensor');
         },
     ], (err, results) =>{
+        if (err) throw err;
         console.log('sensor set up');
         if(cb)cb();
     });

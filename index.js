@@ -3,8 +3,6 @@ const async = require('async');
 var status = require('./modules/ledStatus');
 var sensor = require('./modules/lightSensor');
 
-status.setupLEDs();
-
 async.parallel([
     (callback) => {
         status.setupLEDs(callback);
