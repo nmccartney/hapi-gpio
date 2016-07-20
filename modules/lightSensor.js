@@ -18,4 +18,12 @@ lightSensor.setup = function(cb) {
     });
 }
 
+lightSensor.get = (cb) => {
+    gpio.read(sensorPin, (err, value) => {
+        if (err) throw err;
+        console.log('The value is ' + value);
+        if(cb)cb(value);
+    });
+}
+
 module.exports = lightSensor;
